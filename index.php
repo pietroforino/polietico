@@ -166,6 +166,11 @@
           left: 20px;
         }
 
+        #saveLoop {
+          top: 15px;
+          right: 20px;
+        }
+
 
 
       }
@@ -207,7 +212,7 @@
       </div>
       <img src="assets/home.svg" id="homeButton"  type="button" onclick="window.open('index.php', '_top')" ontouchstart="window.open('index.php', '_top')" style="cursor:pointer"/>
       <!-- <img src="assets/loop.svg" id="saveLoop" onclick="salvaLoop()" ontouchstart="salvaLoop()" style="cursor:pointer"/> -->
-      <img src="assets/erase.svg" id="eraseButton" onclick="cambiaColore('gomma', '#ffffff')" style="cursor:pointer"/>
+      <img src="assets/erase.svg" id="eraseButton" onclick="cambiaColore('gomma', '#ffffff')" ontouchstart="window.open('gomma', '#ffffff')" style="cursor:pointer"/>
 
 
       <div class="iconColor">
