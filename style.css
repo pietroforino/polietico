@@ -409,6 +409,14 @@ a {
   fill: #53ad97;
 }
 
+#white {
+  stroke: black;
+}
+
+#white:hover {
+  fill: black;
+}
+
 #screen {
   position: fixed;
   left: 50vw;
