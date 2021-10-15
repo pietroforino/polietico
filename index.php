@@ -126,7 +126,7 @@
           left: 0vw;
           top: 10vh;
           transform: translate(0%,0%);
-          padding: 2px 2px 0px 2px;
+          padding: 2px 2px 2px 2px;
           max-height: calc(79% + 0px);
         }
 
