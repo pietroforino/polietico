@@ -104,21 +104,71 @@
         max-height: calc(90% + 2px);
       }
 
+      .scotch1 {
+        position:fixed;
+        left:50vw;
+        top:10px;
+        transform: translateX(-24vw);
+        opacity: 0.9
+      }
+
+      .scotch2 {
+        position:fixed;
+        left:50vw;
+        bottom:5px;
+        transform: translateX(16vw) rotateZ(180deg);
+        opacity: 0.9
+      }
+
       @media only screen and (max-width: 500px) {
         #screen {
-          max-height: calc(79% + 2px);
-          }
-
-          #screen {
-            position: relative;
-            left: 0vw;
-            top: 10vh;
-            transform: translate(0%,0%);
-            padding: 2px 2px 0px 2px;
-            max-height: calc(79% + 0px);
-          }
-
+          position: relative;
+          left: 0vw;
+          top: 10vh;
+          transform: translate(0%,0%);
+          padding: 2px 2px 0px 2px;
+          max-height: calc(79% + 0px);
         }
+
+        .scotch1 {
+          left: 0;
+          transform: translateX(-30%);
+        }
+
+        .scotch2 {
+          left:100vw;
+          transform: translateX(-60%) translateY(-50%) rotateZ(180deg);
+        }
+
+        .iconColor {
+          position: fixed;
+          bottom: 57px;
+          left: 15px;
+          width: 30px;
+        }
+
+        .iconColor svg {
+          max-width: 40px;
+          padding: 5px;
+          stroke-width: 6;
+          fill: transparent;
+          transition: 0.2s all;
+          cursor: pointer;
+        }
+
+        #eraseButton {
+          max-width: 30px;
+          left: 20px;
+        }
+
+        #homeButton {
+          max-width: 30px;
+          left: 20px;
+        }
+
+
+
+      }
 
 
     </style>
@@ -148,8 +198,8 @@
         <img src="" id="newimg"/>
       <!-- </div> -->
     </div>
-    <img src="assets/scotch.png" width="120px" alt="" style="position:fixed;left:50vw;top:10px; transform: translateX(-24vw); opacity: 0.9">
-    <img src="assets/scotch.png" width="120px" alt="" style="position:fixed;left:50vw;bottom:5px; transform: translateX(16vw) rotateZ(180deg); opacity: 0.9">
+    <img src="assets/scotch.png" width="120px" alt="" class="scotch1">
+    <img src="assets/scotch.png" width="120px" alt="" class="scotch2">
 
     <div id="controller">
       <div id="saveLoop" onclick="salvaLoop()" ontouchstart="salvaLoop()" style="">
