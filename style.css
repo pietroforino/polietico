@@ -35,30 +35,29 @@ body {
   max-height: 100vh;
 }
 
-    .ml16 {
-      padding: 20px 0;
-      font-size: 72px;
-      overflow: hidden;
-    }
+.ml16 {
+  padding: 20px 0;
+  font-size: 72px;
+  overflow: hidden;
+}
 
-    .ml16 .letter {
-      display: inline-block;
-      padding: 20px 0;
-      line-height: 1em;
-    }
+.ml16 .letter {
+  display: inline-block;
+  padding: 20px 0;
+  line-height: 1em;
+}
 
-    .ml17 {
-      padding: 20px 0;
-      font-size:24px;
-      overflow: hidden;
-    }
+.ml17 {
+  padding: 20px 0;
+  font-size: 24px;
+  overflow: hidden;
+}
 
-    .ml17 .letter {
-      display: inline-block;
-      padding: 20px 0;
-      line-height: 1em;
-    }
-
+.ml17 .letter {
+  display: inline-block;
+  padding: 20px 0;
+  line-height: 1em;
+}
 
 .grid {
   background-image: radial-gradient(var(--colorUno) 1px, transparent 0);
@@ -194,10 +193,10 @@ h2 {
 }
 
 .buttonUno:hover::after, .buttonDue:hover::after {
-  transform: translate3d(0,-5px,0);
+  transform: translate3d(0, -5px, 0);
 }
 
-.buttonUno span, .buttonDue span  {
+.buttonUno span, .buttonDue span {
   display: block;
   padding-top: 3px;
   transition: transform 0.3s ease;
@@ -205,7 +204,7 @@ h2 {
 }
 
 .buttonUno:hover span, .buttonDue:hover span {
-  transform: translate3d(0,-10px,0);
+  transform: translate3d(0, -10px, 0);
 }
 
 .buttonContainer {
@@ -217,7 +216,7 @@ h2 {
 }
 
 .goBack {
-  position:absolute;
+  position: absolute;
   top: 105px;
   left: 40px;
   transition: 0.2s all;
@@ -241,7 +240,7 @@ h2 {
   max-width: 40px;
   bottom: 20px;
   right: 30px;
-  cursor:pointer;
+  cursor: pointer;
   border: 1px solid black;
   border-radius: 10px;
   padding: 10px;
@@ -309,7 +308,8 @@ h2 {
   top: 20px;
   right: 20px;
   color: var(--colorDue);
-  cursor: pointer;s
+  cursor: pointer;
+  s
 }
 
 a {
@@ -413,24 +413,24 @@ a {
   position: fixed;
   left: 50vw;
   top: 50vh;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   padding: 2px 2px 0px 2px;
   background: black;
   max-height: calc(90% + 2px);
 }
 
 .scotch1 {
-  position:fixed;
-  left:50vw;
-  top:10px;
+  position: fixed;
+  left: 50vw;
+  top: 10px;
   transform: translateX(-24vw);
   opacity: 0.9
 }
 
 .scotch2 {
-  position:fixed;
-  left:50vw;
-  bottom:5px;
+  position: fixed;
+  left: 50vw;
+  bottom: 5px;
   transform: translateX(16vw) rotateZ(180deg);
   opacity: 0.9
 }
@@ -439,8 +439,8 @@ a {
   #screen {
     position: relative;
     left: 0vw;
-    top: 50px;
-    transform: translate(0%,0%);
+    top: 70px;
+    transform: translate(0%, 0%);
     padding: 2px 2px 0px 2px;
     max-height: none;
   }
@@ -451,7 +451,7 @@ a {
   }
 
   .scotch2 {
-    left:100vw;
+    left: 100vw;
     transform: translateX(-60%) translateY(-50%) rotateZ(180deg);
   }
 
@@ -485,7 +485,4 @@ a {
     top: 15px;
     right: 20px;
   }
-
-
-
 }
