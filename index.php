@@ -104,11 +104,20 @@
         max-height: calc(90% + 2px);
       }
 
-      @media only screen and (max-width: 400px) {
+      @media only screen and (max-width: 500px) {
         #screen {
           max-height: calc(79% + 2px);
-
           }
+
+          #screen {
+            position: relative;
+            left: 0vw;
+            top: 10vh;
+            transform: translate(0%,0%);
+            padding: 2px 2px 0px 2px;
+            max-height: calc(79% + 0px);
+          }
+
         }
 
 
@@ -126,8 +135,6 @@
 
   <script type="text/javascript">
 
-    phpImage = <?php echo json_encode($randomImage); ?>;
-
     $.getJSON('https://ipapi.co/json/', function(data) {
     console.log(JSON.stringify(data.country_name, null, 2));
     });
@@ -137,8 +144,9 @@
 
     <div id="screen" style="">
       <div id="createImg"></div>
-      <div id="img" style="height: 100vh">
-        <img src="" id="newimg"/></div>
+      <!-- <div id="img" style="height: 100vh"> -->
+        <img src="" id="newimg"/>
+      <!-- </div> -->
     </div>
     <img src="assets/scotch.png" width="120px" alt="" style="position:fixed;left:50vw;top:10px; transform: translateX(-24vw); opacity: 0.9">
     <img src="assets/scotch.png" width="120px" alt="" style="position:fixed;left:50vw;bottom:5px; transform: translateX(16vw) rotateZ(180deg); opacity: 0.9">
@@ -277,7 +285,7 @@
       }
 
       function scribbleAgain() {
-        window.open("scribble.php", "_self");
+        window.open("index.php", "_self");
       }
 
     </script>

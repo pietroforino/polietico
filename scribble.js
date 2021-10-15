@@ -1,24 +1,9 @@
-var img1; //variable to load the previous scribble
 
-//colors of the scribble
 var coloreVero = "#fbe54e";
 var traccia = 20;
 
-var yellow =  "#fbe54e"
-var orange =  "#e8a03f"
-var red =  "#d23a2f"
-var purple =  "#694990"
-var blu =  "#3e6eaf"
-var green =  "#449345"
-var lightgreen =  "#53ad97"
-
-var path;
-
-var phpImage;
-
 var drawing = [];
-var currentPath = [];
-var erase = 0;
+
 var isDrawing = false;
 var isErasing = false;
 
@@ -46,10 +31,10 @@ function setup() {
     canvas = createCanvas(larghezza, altezza);
   }
 
-  canvas.mousePressed(startPath);
-  canvas.parent('createImg');
-
   canvas.background("white");
+
+  // canvas.mousePressed(startPath);
+  canvas.parent('createImg');
 
   bg = loadImage("assets/computer.png");
 }
@@ -58,15 +43,11 @@ function setup() {
 function startPath() {
   $('#controller').fadeOut('fast')
   isDrawing = true;
-  currentPath = [];
-  drawing.push(currentPath);
 }
 
 function touchStarted() {
   $('#controller').fadeOut('fast')
   isDrawing = true;
-  currentPath = [];
-  drawing.push(currentPath);
   return false;
 }
 
@@ -80,12 +61,6 @@ function touchEnded() {
   $('#controller').fadeIn('fast')
   isDrawing = false;
 }
-
-//overwriting the array to delete the scribble just drawn
-// function eraseLine() {
-//     colore = "white";
-//     traccia = 30;
-// }
 
 function draw() {
   background(bg);
