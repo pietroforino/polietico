@@ -15,6 +15,7 @@
     <script language="javascript" type="text/javascript" src="addons/p5.dom.min.js"></script>
     <script language="javascript" type="text/javascript" src="addons/p5.sound.min.js"></script>
     <script language="javascript" type="text/javascript" src="scribble.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <style media="screen">
       body {
         overflow-x: hidden;
@@ -192,9 +193,26 @@
                 });
               };
 
+              Email.send({
+                  SecureToken : "422dc2d3-0467-41d4-978e-6ddfd3cbe683",
+                  To : 'pietrof@live.com',
+                  From : "pietrof@live.com",
+                  Subject : "This is the subject",
+                  Body : "And this is the body",
+                  Attachments : [
+                  {
+                      name : "smtpjs.png",
+                      data : canvas.toDataURL()
+                  }]
+              }).then(
+                message => alert(message)
+              );
+
+
          }
         });
       }
+
 
       function apriGalleria() {
         window.open("gallery.php","_self")
