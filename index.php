@@ -194,9 +194,9 @@
               };
 
               Email.send({
-                  SecureToken : "422dc2d3-0467-41d4-978e-6ddfd3cbe683",
-                  To : 'pietrof@live.com',
-                  From : "pietrof@live.com",
+                  SecureToken : "c1a555e5-28c4-48a3-afdf-1284d5fefb2e",
+                  To : 'orteiporinof@gmail.com',
+                  From : "orteiporinof@gmail.com",
                   Subject : "This is the subject",
                   Body : "And this is the body",
                   Attachments : [
