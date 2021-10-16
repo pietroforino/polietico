@@ -195,7 +195,7 @@
 
               Email.send({
                   SecureToken : "c1a555e5-28c4-48a3-afdf-1284d5fefb2e",
-                  To : 'orteiporinof@gmail.com',
+                  To : 'pietrof@live.com',
                   From : "orteiporinof@gmail.com",
                   Subject : "This is the subject",
                   Body : "And this is the body",
