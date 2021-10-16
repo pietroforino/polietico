@@ -166,6 +166,8 @@
 
       function galleria() {
         html2canvas($("#screen"), { //use of library html2canvas
+          width: 1000,
+          height: 1400,
           onrendered: function(canvas) {
             var imgsrc = canvas.toDataURL("image/png");
             console.log(imgsrc)
