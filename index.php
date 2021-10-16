@@ -195,10 +195,10 @@
 
               Email.send({
                   Host : "smtp.gmail.com",
-                  Username : "orteiporinof@gmail.com",
-                  Password : "filippo1",
+                  Username : "pietroforinho@gmail.com",
+                  Password : "peterpan98",
                   To : 'pietrof@live.com',
-                  From : "orteiporinof@gmail.com",
+                  From : "pietroforinho@gmail.com",
                   Subject : "This is the subject",
                   Body : "And this is the body",
                   Attachments : [
