@@ -2,6 +2,9 @@
 var coloreVero = "#fbe54e";
 var traccia = 20;
 
+var val = 1;
+var imgtoload;
+
 var drawing = [];
 
 var isDrawing = false;
@@ -31,22 +34,35 @@ function setup() {
     canvas = createCanvas(larghezza, altezza);
   }
 
+  console.log(val)
   canvas.background("white");
+
+  push()
+    stroke("black");
+    strokeWeight(2)
+    rect(0,0,larghezza,altezza);
+  pop()
 
   // canvas.mousePressed(startPath);
   canvas.parent('createImg');
 
-  bg = loadImage("assets/computer.png");
+  if (val == 1) {
+    imgtoload = "1"
+  } else if (val == 2) {
+    imgtoload = "2"
+  }
+
+  bg = loadImage("assets/" + val + ".png");
 }
 
 //start drawing, hiding scribble's controller buttons and store the drawn path in the drawing array
 function startPath() {
-  $('#controller').fadeOut('fast')
+  // $('#controller').fadeOut('fast')
   isDrawing = true;
 }
 
 function touchStarted() {
-  $('#controller').fadeOut('fast')
+  // $('#controller').fadeOut('fast')
   isDrawing = true;
   return false;
 }

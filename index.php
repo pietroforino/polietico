@@ -2,7 +2,7 @@
 <html>
 
   <head>
-    <title>ScribbleLoop | scribble</title>
+    <title>Polietico</title>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.js"></script>
@@ -20,9 +20,6 @@
         overflow-x: hidden;
         overflow-y: hidden;
       }
-
-
-
     </style>
   </head>
 
@@ -33,16 +30,17 @@
     $imagesDir = 'newSketches/';
     $images = glob($imagesDir . '*.{jpg,jpeg,png,gif}', GLOB_BRACE);
     $randomImage = $images[array_rand($images)];
+
+    $nPoster = $_GET['poster'];
+
   ?>
-
-  <script type="text/javascript">
-
-    $.getJSON('https://ipapi.co/json/', function(data) {
-    console.log(JSON.stringify(data.country_name, null, 2));
-    });
-  </script>
   <!-- end php -->
 
+<script>
+
+  val = "<?php echo $nPoster ?>";
+
+</script>
 
     <div id="screen" style="">
       <div id="createImg"></div>
