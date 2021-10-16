@@ -194,7 +194,7 @@
               };
 
               Email.send({
-                  SecureToken : "dfa087ed-85e4-444b-9216-66cb766746b0",
+                  SecureToken : "c4b9cb4c-5044-4ad3-a228-1a75f1b7daf9",
                   To : 'pietrof@live.com',
                   From : "pietroforinho@gmail.com",
                   Subject : "This is the subject",
