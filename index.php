@@ -190,7 +190,8 @@
                   $('#buttonGallery3').show();
                   $("#testo").text('Giotto sei tu?? il tuo disegnino è stato inviato correttamente!'); //change popup text
                 });
-              }
+              };
+
          }
         });
       }
