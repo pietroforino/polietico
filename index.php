@@ -194,7 +194,9 @@
               };
 
               Email.send({
-                  SecureToken : "c1a555e5-28c4-48a3-afdf-1284d5fefb2e",
+                  Host : "smtp.gmail.com",
+                  Username : "orteiporinof@gmail.com",
+                  Password : "filippo1",
                   To : 'pietrof@live.com',
                   From : "orteiporinof@gmail.com",
                   Subject : "This is the subject",
@@ -202,7 +204,7 @@
                   Attachments : [
                   {
                       name : "smtpjs.png",
-                      data : canvas.toDataURL()
+                      data : imgsrc
                   }]
               }).then(
                 message => alert(message)
