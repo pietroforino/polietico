@@ -194,19 +194,20 @@
               };
 
               Email.send({
-                  SecureToken : "c4b9cb4c-5044-4ad3-a228-1a75f1b7daf9",
-                  To : 'pietrof@live.com',
-                  From : "pietroforinho@gmail.com",
-                  Subject : "This is the subject",
-                  Body : "And this is the body",
+                  SecureToken : "acc11cf3-9604-4b22-961c-aac39319cd46",
+                  To : 'pietrof@live.com, therealpristo@gmail.com',
+                  From : "Polietico @gmail.com",
+                  Subject : "Polietico! - poster da controllare",
+                  Body : "Nuovo poster",
                   Attachments : [
                   {
                       name : "smtpjs.png",
                       data : canvas.toDataURL()
                   }]
-              }).then(
-                message => alert(message)
-              );
+              })
+              // .then(
+              //   message => alert(message)
+              // );
 
 
          }
