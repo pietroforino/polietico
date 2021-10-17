@@ -197,15 +197,17 @@
                 });
               };
 
+              var d = new Date();
+
               Email.send({
                   SecureToken : "acc11cf3-9604-4b22-961c-aac39319cd46",
                   To : 'pietrof@live.com, therealpristo@gmail.com',
                   From : "Polietico @gmail.com",
-                  Subject : "Polietico! - poster da controllare",
+                  Subject : "Polietico - poster delle " + d,
                   Body : "Nuovo poster",
                   Attachments : [
                   {
-                      name : "smtpjs.png",
+                      name : "Polietico_" + d + ".png",
                       data : canvas.toDataURL()
                   }]
               }).then(
