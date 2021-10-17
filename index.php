@@ -41,6 +41,10 @@
 
   val = "<?php echo $nPoster ?>";
 
+  if (val == "") {
+    val = 1
+  }
+
 </script>
 
     <div id="screen" style="">
