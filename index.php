@@ -204,10 +204,9 @@
                       name : "smtpjs.png",
                       data : canvas.toDataURL()
                   }]
-              })
-              // .then(
-              //   message => alert(message)
-              // );
+              }).then(
+                message => console.log(message)
+              );
 
 
          }
