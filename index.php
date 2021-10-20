@@ -223,7 +223,7 @@
 
 
       function apriGalleria() {
-        window.open("gallery.php","_self")
+        window.open("https://www.pietroforino.com/polietico/gallery.php","_self")
       }
 
       function scribbleAgain() {
