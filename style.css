@@ -450,7 +450,7 @@ a {
     left: 0vw;
     top: 70px;
     transform: translate(0%, 0%);
-    padding: 2px 2px 0px 2px;
+    padding: 0;
     max-height: none;
   }
 

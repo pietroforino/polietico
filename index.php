@@ -5,7 +5,10 @@
     <title>Polietico</title>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.js"></script> -->
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
+
+
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
@@ -170,52 +173,51 @@
       var contaGallery = 0 // var to save sketch once
 
       function galleria() {
-        html2canvas($("#screen"), { //use of library html2canvas
-          onrendered: function(canvas) {
-            var imgsrc = canvas.toDataURL("image/png");
-            console.log(imgsrc)
-              $("#newimg").attr('src', imgsrc);
-              $("#img").show();
-              $("#newimg").show();
-              $("#createImg").hide();
-              var dataURL = canvas.toDataURL();
-              if (contaGallery == 0) { //save file, execute only once
-                $.ajax({
-                  type: "POST",
-                  url: "server.php",
-                  data: {
-                    imgBase64: dataURL
-                  }
-                }).done(function(o) {
-                  console.log('saved');
-                  contaGallery = 1 // prevent a new saving
+        html2canvas($("#screen")[0], { //use of library html2canvas
+          scale: 5
+        }).then(function(canvas) {
+          var imgsrc = canvas.toDataURL("image/png");
+          console.log(imgsrc)
+            // $("#newimg").attr('src', imgsrc);
+            // $("#img").show();
+            // $("#newimg").show();
+            // $("#createImg").hide();
+            var dataURL = canvas.toDataURL();
+            if (contaGallery == 0) { //save file, execute only once
+              $.ajax({
+                type: "POST",
+                url: "server.php",
+                data: {
+                  imgBase64: dataURL
+                }
+              }).done(function(o) {
+                console.log('saved');
+                contaGallery = 1 // prevent a new saving
 
-                  $('#buttonGallery').hide();
-                  $('#buttonGallery2').show();
-                  $('#buttonGallery3').show();
-                  $("#testo").text('Giotto sei tu?? il tuo disegnino è stato inviato correttamente!'); //change popup text
-                });
-              };
+                $('#buttonGallery').hide();
+                $('#buttonGallery2').show();
+                $('#buttonGallery3').show();
+                $("#testo").text('Giotto sei tu?? il tuo disegnino è stato inviato correttamente!'); //change popup text
+              });
+            };
 
-              var d = new Date();
+            var d = new Date();
 
-              Email.send({
-                  SecureToken : "acc11cf3-9604-4b22-961c-aac39319cd46",
-                  To : 'pietrof@live.com, therealpristo@gmail.com',
-                  From : "Polietico @gmail.com",
-                  Subject : "Polietico - poster delle " + d,
-                  Body : "Nuovo poster",
-                  Attachments : [
-                  {
-                      name : "Polietico_" + d + ".png",
-                      data : canvas.toDataURL()
-                  }]
-              }).then(
-                message => console.log(message)
-              );
+            Email.send({
+                SecureToken : "acc11cf3-9604-4b22-961c-aac39319cd46",
+                To : 'pietrof@live.com, therealpristo@gmail.com',
+                From : "Polietico @gmail.com",
+                Subject : "Polietico - poster di " + d,
+                Body : "Nuovo poster",
+                Attachments : [
+                {
+                    name : "Polietico_" + d + ".png",
+                    data : canvas.toDataURL()
+                }]
+            }).then(
+              message => console.log(message)
+            );
 
-
-         }
         });
       }
 
