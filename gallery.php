@@ -67,7 +67,7 @@
           width: 100%
         }
 
-        @media (min-width: ' . $width['0'] . 'px) {
+        @media (min-width: 769px) {
           .bm-grid-' . $transient . ' {
             display: inline-block;
             -webkit-column-count: 2;
@@ -76,7 +76,7 @@
           }
         }
 
-        @media (min-width: ' . $width['1'] . 'px) {
+        @media (min-width: 1279px) {
           .bm-grid-' . $transient . ' {
             display: inline-block;
             -webkit-column-count: 3;
@@ -85,12 +85,12 @@
           }
         }
 
-        @media (min-width: ' . $width['2'] . 'px) {
+        @media (min-width: 481px) {
           .bm-grid-' . $transient . ' {
             display: inline-block;
-            -webkit-column-count: ' . $columns . ';
-            -moz-column-count: ' . $columns . ';
-            column-count: ' . $columns . ';
+            -webkit-column-count: 1;
+            -moz-column-count: 1;
+            column-count: 1;
           }
         }
         </style>';

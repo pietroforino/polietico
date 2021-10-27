@@ -127,13 +127,17 @@
       function cambiaColore(cColor, coloreV) {
         coloreVero = coloreV;
         console.log(cColor)
-        if (cColor == "gomma") {
-          $('.iconColor svg').css("fill", "transparent");
-          $('#eraseButton').css("fill", "black")
+        if (cColor == "white") {
+          console.log("gomma")
+          $('#white').css("fill", "white")
+          $('#white').css("stroke", "black")
         } else {
           document.getElementById(cColor).style.fill = coloreVero;
-          $('#white').css("fill", "black")
+          console.log("nGom")
+
+          $('#white').css("stroke", "transparent")
           $('.iconColor svg').not('#' + cColor).css("fill", "transparent")
+          $('#white').css("fill", "black")
 
         }
       }
