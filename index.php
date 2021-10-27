@@ -181,7 +181,7 @@
           scale: 5
         }).then(function(canvas) {
           var imgsrc = canvas.toDataURL("image/png");
-          console.log(imgsrc)
+          // console.log(imgsrc)
             // $("#newimg").attr('src', imgsrc);
             // $("#img").show();
             // $("#newimg").show();
@@ -208,7 +208,7 @@
             var d = new Date();
 
             Email.send({
-                SecureToken : "acc11cf3-9604-4b22-961c-aac39319cd46",
+                SecureToken : "c704c912-b813-4008-902a-9dd6d497190d",
                 To : 'pietrof@live.com, therealpristo@gmail.com',
                 From : "Polietico @gmail.com",
                 Subject : "Polietico - poster di " + d,
