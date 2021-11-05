@@ -63,7 +63,7 @@
       <div id="saveLoop" onclick="salvaLoop()" ontouchstart="salvaLoop()" style="">
         Bòn, ho finito &rarr;
       </div>
-      <img src="assets/home.svg" id="homeButton"  type="button" onclick="window.open('index.php', '_top')" ontouchstart="window.open('index.php', '_top')" style="cursor:pointer"/>
+      <a href="https://www.pietroforino.com/polietico"><img src="assets/home.svg" id="homeButton"  type="button" style="cursor:pointer"/></a>
       <!-- <img src="assets/loop.svg" id="saveLoop" onclick="salvaLoop()" ontouchstart="salvaLoop()" style="cursor:pointer"/> -->
 
       <div class="iconColor">
