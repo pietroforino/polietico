@@ -433,7 +433,7 @@ a {
 .scotch1 {
   position: fixed;
   left: 50vw;
-  top: 10px;
+  top: 3%;
   transform: translateX(-24vw);
   opacity: 0.9
 }
@@ -441,7 +441,7 @@ a {
 .scotch2 {
   position: fixed;
   left: 50vw;
-  bottom: 5px;
+  bottom: 3%;
   transform: translateX(16vw) rotateZ(180deg);
   opacity: 0.9
 }
