@@ -233,7 +233,10 @@
       }
 
       function scribbleAgain() {
-        window.open("index.php?poster=" + val, "_self");
+        const values = ["equita", "fiducia", "integrita", "professionalita", "responsabilita", "rispetto", "trasparenza"];
+        const randomValues = Math.floor(Math.random() * values.length);
+
+        window.open("index.php?poster=" + values[randomValues], "_self");
       }
 
     </script>
