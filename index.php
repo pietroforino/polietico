@@ -19,12 +19,14 @@
     <script language="javascript" type="text/javascript" src="addons/p5.sound.min.js"></script>
     <script language="javascript" type="text/javascript" src="scribble.js"></script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
+
     <style media="screen">
       body {
         overflow-x: hidden;
         overflow-y: hidden;
       }
     </style>
+
   </head>
 
   <body>
@@ -45,7 +47,7 @@
   val = "<?php echo $nPoster ?>";
 
   if (val == "") {
-    val = 1
+    val = "responsabilita"
   }
 
 </script>
@@ -126,14 +128,14 @@
 
       function cambiaColore(cColor, coloreV) {
         coloreVero = coloreV;
-        console.log(cColor)
+        // console.log(cColor)
         if (cColor == "white") {
           console.log("gomma")
           $('#white').css("fill", "white")
           $('#white').css("stroke", "black")
         } else {
           document.getElementById(cColor).style.fill = coloreVero;
-          console.log("nGom")
+          // console.log("nGom")
 
           $('#white').css("stroke", "transparent")
           $('.iconColor svg').not('#' + cColor).css("fill", "transparent")

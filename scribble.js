@@ -2,8 +2,7 @@
 var coloreVero = "#fbe54e";
 var traccia = 20;
 
-var val = 1;
-var imgtoload;
+var val = "responsabilita";
 
 var drawing = [];
 
@@ -26,11 +25,11 @@ function setup() {
 
   if (larghezza <= windowWidth) {
     canvas = createCanvas(larghezza, altezza);
-    console.log("desktop")
+    // console.log("desktop")
   } else {
     altezza = windowWidth * 1.4;
     larghezza = windowWidth;
-    console.log("mobile")
+    // console.log("mobile")
     canvas = createCanvas(larghezza, altezza);
   }
 
@@ -45,12 +44,6 @@ function setup() {
 
   // canvas.mousePressed(startPath);
   canvas.parent('createImg');
-
-  if (val == 1) {
-    imgtoload = "1"
-  } else if (val == 2) {
-    imgtoload = "2"
-  }
 
   bg = loadImage("assets/" + val + ".png");
 }
