@@ -433,7 +433,7 @@ a {
 .scotch1 {
   position: fixed;
   left: 50vw;
-  top: 3%;
+  top: 10px;
   transform: translateX(-24vw);
   opacity: 0.9
 }
@@ -441,7 +441,7 @@ a {
 .scotch2 {
   position: fixed;
   left: 50vw;
-  bottom: 3%;
+  bottom: 5px;
   transform: translateX(16vw) rotateZ(180deg);
   opacity: 0.9
 }
@@ -462,12 +462,14 @@ a {
 
   .scotch1 {
     left: 0;
+    top: 3%;
     transform: translateX(-30%);
   }
 
   .scotch2 {
     left: 100vw;
-    transform: translateX(-60%) translateY(-50%) rotateZ(180deg);
+    bottom: 3%;
+    transform: translateX(-60%) translateY(0%) rotateZ(180deg);
   }
 
   .iconColor {
