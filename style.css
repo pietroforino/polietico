@@ -462,13 +462,13 @@ a {
 
   .scotch1 {
     left: 0;
-    top: 4%;
+    top: 3%;
     transform: translateX(-30%);
   }
 
   .scotch2 {
     left: 100vw;
-    bottom: 1%;
+    bottom: 0%;
     transform: translateX(-60%) translateY(0%) rotateZ(180deg);
   }
 
