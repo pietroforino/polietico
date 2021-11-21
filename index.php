@@ -55,7 +55,7 @@
     <div id="screen" style="">
       <div id="createImg"></div>
       <!-- <div id="img" style="height: 100vh"> -->
-        <img src="" id="newimg"/>
+        <img src="" id="newimg" style="max-width:100%"/>
       <!-- </div> -->
     </div>
     <img src="assets/scotch.png" width="120px" alt="" class="scotch1">
@@ -179,15 +179,15 @@
       var contaGallery = 0 // var to save sketch once
 
       function galleria() {
-        html2canvas($("#screen")[0], { //use of library html2canvas
+        html2canvas($("#defaultCanvas0")[0], { //use of library html2canvas
           scale: 5
         }).then(function(canvas) {
           var imgsrc = canvas.toDataURL("image/png");
           // console.log(imgsrc)
-            // $("#newimg").attr('src', imgsrc);
-            // $("#img").show();
-            // $("#newimg").show();
-            // $("#createImg").hide();
+            $("#newimg").attr('src', imgsrc);
+            $("#img").show();
+            $("#newimg").show();
+            $("#createImg").hide();
             var dataURL = canvas.toDataURL();
             if (contaGallery == 0) { //save file, execute only once
               $.ajax({
