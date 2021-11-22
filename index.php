@@ -178,7 +178,7 @@
 
       function galleria() {
         html2canvas($("#defaultCanvas0")[0], { //use of library html2canvas
-          scale: 5
+          scale: 3
         }).then(function(canvas) {
           var imgsrc = canvas.toDataURL("image/png");
           // console.log(imgsrc)
