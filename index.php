@@ -13,8 +13,8 @@
     <link rel="stylesheet" href="/style.css">
 
     <script language="javascript" type="text/javascript" src="addons/p5.min.js"></script>
-    <script language="javascript" type="text/javascript" src="addons/p5.dom.min.js"></script>
-    <script language="javascript" type="text/javascript" src="addons/p5.sound.min.js"></script>
+    <!-- <script language="javascript" type="text/javascript" src="addons/p5.dom.min.js"></script> -->
+    <!-- <script language="javascript" type="text/javascript" src="addons/p5.sound.min.js"></script> -->
     <script language="javascript" type="text/javascript" src="scribble.js"></script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
 
@@ -90,7 +90,7 @@
            <path d="M53,0C23.7,0,0,23.7,0,53s23.7,53,53,53s53-23.7,53-53S82.2,0,53,0L53,0z"/>
         </svg>
 
-        <svg onclick="cambiaColore('green', '#449345')" ontouchstart="cambiaColore('yellow', '#e8a03f')" version="1.1" id="green" x="0px" y="0px"
+        <svg onclick="cambiaColore('green', '#449345')" ontouchstart="cambiaColore('green', '#449345')" version="1.1" id="green" x="0px" y="0px"
         	 viewBox="0 0 105.9 105.9" xml:space="preserve">
            <path d="M53,0C23.7,0,0,23.7,0,53s23.7,53,53,53s53-23.7,53-53S82.2,0,53,0L53,0z"/>
         </svg>
