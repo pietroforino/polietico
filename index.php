@@ -8,8 +8,6 @@
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.js"></script> -->
     <script src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
 
-
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
     <link rel="stylesheet" href="/style.css">
@@ -65,7 +63,7 @@
       <div id="saveLoop" onclick="salvaLoop()" ontouchstart="salvaLoop()" style="">
         Bòn, ho finito &rarr;
       </div>
-      <a href="https://www.pietroforino.com/polietico"><img src="assets/home.svg" id="homeButton"  type="button" style="cursor:pointer"/></a>
+      <a href="https://www.polietico.it"><img src="assets/home.svg" id="homeButton"  type="button" style="cursor:pointer"/></a>
       <!-- <img src="assets/loop.svg" id="saveLoop" onclick="salvaLoop()" ontouchstart="salvaLoop()" style="cursor:pointer"/> -->
 
       <div class="iconColor">
@@ -229,7 +227,7 @@
 
 
       function apriGalleria() {
-        window.open("https://www.pietroforino.com/polietico/gallery.php","_self")
+        window.open("https://www.polietico.it/gallery.php","_self")
       }
 
       function scribbleAgain() {
