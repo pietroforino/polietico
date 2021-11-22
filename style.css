@@ -347,6 +347,7 @@ a {
 
 .iconColor svg {
   max-width: 40px;
+  border-radius: 100px;
   padding: 5px;
   stroke-width: 6;
   fill: transparent;
@@ -447,7 +448,6 @@ a {
 }
 
 @media only screen and (max-width: 500px) {
-
   #buttonGallery, #buttonGallery2, #buttonGallery3 {
     font-size: 16px;
   }
@@ -482,7 +482,7 @@ a {
   .iconColor svg {
     max-width: 40px;
     padding: 5px;
-    stroke-width: 6;
+    stroke-width: 10px;
     fill: transparent;
     transition: 0.2s all;
     cursor: pointer;

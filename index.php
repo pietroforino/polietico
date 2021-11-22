@@ -56,14 +56,12 @@
         <img src="" id="newimg" style="max-width:100%"/>
       <!-- </div> -->
     </div>
-    <img src="assets/scotch.png" width="120px" alt="" class="scotch1">
-    <img src="assets/scotch.png" width="120px" alt="" class="scotch2">
 
     <div id="controller">
       <div id="saveLoop" onclick="salvaLoop()" ontouchstart="salvaLoop()" style="">
         Bòn, ho finito &rarr;
       </div>
-      <a href="https://www.polietico.it"><img src="assets/home.svg" id="homeButton"  type="button" style="cursor:pointer"/></a>
+        <img src="assets/home.svg" id="homeButton"  type="button" style="cursor:pointer" onclick='window.open("https://www.polietico.it/","_self")' ontouchstart='window.open("https://www.polietico.it/","_self")' />
       <!-- <img src="assets/loop.svg" id="saveLoop" onclick="salvaLoop()" ontouchstart="salvaLoop()" style="cursor:pointer"/> -->
 
       <div class="iconColor">
