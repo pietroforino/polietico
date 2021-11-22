@@ -101,7 +101,7 @@
         </svg>
 
 
-        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+        <svg style="border-radius:0" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
         	 viewBox="0 0 155 155" style="enable-background:new 0 0 155 155;" xml:space="preserve" onclick="cambiaColore('white', '#ffffff')" ontouchstart="cambiaColore('white', '#ffffff')" version="1.1" id="white" style="cursor:pointer">
         	<path class="st0" d="M0.3,100.9C1.2,96.6,4,93.6,7,90.6c12.8-12.7,25.5-25.4,38.2-38.1c1-1,1.4-0.9,2.3,0
         		C66,71,84.4,89.4,103,107.8c1,1,1,1.5,0,2.4c-11.5,11.4-22.9,22.8-34.4,34.3c-0.4,0.4-0.9,0.7-1.1,1.3c0.5,0.3,1.1,0.1,1.6,0.1
@@ -126,7 +126,7 @@
         coloreVero = coloreV;
         // console.log(cColor)
         if (cColor == "white") {
-          console.log("gomma")
+          // console.log("gomma")
           $('#white').css("fill", "white")
           $('#white').css("stroke", "black")
         } else {
