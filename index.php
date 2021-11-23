@@ -100,9 +100,6 @@
            <path d="M53,0C23.7,0,0,23.7,0,53s23.7,53,53,53s53-23.7,53-53S82.2,0,53,0L53,0z"/>
         </svg>
 
-      </div>
-
-      <div class="iconGomma">
         <svg style="border-radius:0" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
            viewBox="0 0 155 155" style="enable-background:new 0 0 155 155;" xml:space="preserve" onclick="cambiaColore('white', '#ffffff')" ontouchstart="cambiaColore('white', '#ffffff')" version="1.1" id="white" style="cursor:pointer">
           <path class="st0" d="M0.3,100.9C1.2,96.6,4,93.6,7,90.6c12.8-12.7,25.5-25.4,38.2-38.1c1-1,1.4-0.9,2.3,0
@@ -116,7 +113,12 @@
             c1.5-1.6,3.1-3.2,4.7-4.7c0.8-0.8,0.8-1.2,0-2c-5.2-5.1-10.4-10.3-15.5-15.4c-4.9-4.9-9.8-9.7-14.6-14.6
             C105.1,19.7,104.9,19.3,104.3,19.2z"/>
         </svg>
+
       </div>
+
+      <!-- <div class="iconGomma">
+
+      </div> -->
 
 
     </div>
